@@ -5,7 +5,8 @@ const https = require('node:https');
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
-    defaultViewpor: null
+    defaultViewpor: null,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   const cityOI = process.argv[2];
   if (!cityOI) {
