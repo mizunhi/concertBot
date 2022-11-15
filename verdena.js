@@ -57,7 +57,7 @@ const https = require('node:https');
       console.error(e);
     });
   } else {
-    process.stdout.write(message);
+    console.log(message);
   }
 
 })();
