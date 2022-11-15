@@ -56,6 +56,8 @@ const https = require('node:https');
     }).on('error', (e) => {
       console.error(e);
     });
+  } else {
+    process.stdout.write(message);
   }
 
 })();
