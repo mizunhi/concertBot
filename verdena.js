@@ -46,8 +46,8 @@ const https = require('node:https');
 
   if (filter.length > 0) {
     https.get(send_message_url, (res) => {
-      console.log('statusCode:', res.statusCode);
-      console.log('headers:', res.headers);
+      // console.log('statusCode:', res.statusCode);
+      // console.log('headers:', res.headers);
   
       res.on('data', (d) => {
         process.stdout.write(d);
