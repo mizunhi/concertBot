@@ -43,7 +43,6 @@ const https = require('node:https');
   const tGroup = '-621035090'
   const send_message_url = `https://api.telegram.org/bot${tApi}/sendMessage?chat_id=${tGroup}&text=${message}`
 
-
   if (filter.length > 0) {
     https.get(send_message_url, (res) => {
       // console.log('statusCode:', res.statusCode);
